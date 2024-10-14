@@ -3,7 +3,7 @@
   Include 'constants.f90'
 
   ! a=0.36 for qp, 0.499 for dp, & 0.7 for sp
-    Real (rk), Parameter :: a = 0.36_rk + (dp/rk)*(rk/dp)*0.139_rk + (sp/rk)*(rk/sp)*0.34_rk
+    Real (rk), Parameter :: a = 0.359375_rk + (dp/rk)*(rk/dp)*0.140625_rk + (sp/rk)*(rk/sp)*0.3359375_rk
     Real (rk), Parameter :: a_pi = a/pi ! A/PI
     Real (rk), Parameter :: a_sqr = a*a
     Real (rk), Parameter :: exp_a_sqr = exp(-a_sqr) ! EXP(-A^2)
